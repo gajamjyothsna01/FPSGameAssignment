@@ -34,12 +34,12 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("", !animator.GetBool("IsAiming"));
         }*/
-        if (Input.GetMouseButton(0) && !animator.GetBool("isFiring"))
+        if (Input.GetMouseButton(0))
         {
-            if (ammo > 0)
+            /*if (ammo > 0)
             {
                 // animator.SetBool("isFiring", !animator.GetBool("isFiring"));
-                animator.SetTrigger("isFiring");
+                
                 
                 //WhenZombieeGotHit();
                 ammo = Mathf.Clamp(ammo - 10, 0, maxAmmo);
@@ -48,7 +48,8 @@ public class PlayerController : MonoBehaviour
             else
             {
                 //Trigger the sound for empty bullets.
-            }
+            }*/
+            animator.SetTrigger("isFiring");
 
         }
     }
