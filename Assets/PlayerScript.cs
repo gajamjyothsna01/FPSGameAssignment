@@ -13,10 +13,10 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();   
         audioSource = GetComponent<AudioSource>();
         clip = GetComponent<AudioClip>();
+        
 
-
-        animator.SetBool("isIdle", true);
-    }
+         animator.SetBool("isIdle", true);
+   }
 
     // Update is called once per frame
     void Update()

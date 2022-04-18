@@ -10,8 +10,7 @@ public class EnemyController : MonoBehaviour
     public GameObject target;
     public float walkingSpeed;
     public float runningSpeed;
-
-
+    
     enum STATE { IDLE, WALK, RUN, FIRE,DIE};
     STATE state = STATE.IDLE;
     // Start is called before the first frame update
